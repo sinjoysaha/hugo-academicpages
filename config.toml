@@ -1,3 +1,36 @@
-baseURL = 'http://example.org/'
+baseURL = ''
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Hugo AcademicPages'
+theme = "hugo-academicpages"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+
+[params]
+    follow_label = "Follow"
+    powered_by = "Powered by"
+
+    [params.author]
+
+        [params.author.contact]
+            [[params.author.contact.list]]
+            class = "linkedin"
+            icon = "fa-linkedin"
+            url = "//linkedin.com/in/sinjoysaha"
+            title = "LinkedIn"
+
+            [[params.author.contact.list]]
+            class = "twitter"
+            icon = "fa-twitter-square"
+            url = "//twitter.com/sinjoysaha"
+            title = "Twitter"
+
+            [[params.author.contact.list]]
+            class = "github"
+            icon = "fa-github"
+            url = "//github.com/sinjoysaha"
+            title = "GitHub"
+
+        
+        

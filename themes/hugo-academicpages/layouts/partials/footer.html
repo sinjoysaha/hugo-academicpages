@@ -1,0 +1,12 @@
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    {{ if .Site.Params.follow_label }} 
+    <li><strong>{{ .Site.Params.follow_label }}</strong></li>
+    {{ end }}
+    {{ range .Site.Params.author.contact.list }}
+        <li class="{{ .class }}"><i class="fab {{ .icon }}" aria-hidden="true"></i><a href="{{ .url }}">{{ .title }}</a></li>
+    {{ end }}
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; {{ time.Now.Year }} {{ .Title }}. {{ .Site.Params.powered_by | default "Powered by" }} <a href="http://gohugo.io" rel="nofollow">Hugo</a> &amp; Inspired by <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
