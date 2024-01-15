@@ -33,11 +33,17 @@ theme = "hugo-academicpages"
     url = "/blog/"
     weight = 50
 
-  [[menu.main]]
-    identifier = "cv"
-    name = "CV"
-    url = "/cv/"
-    weight = 50
+[[menu.main]]
+  identifier = "cv"
+  name = "CV"
+  url = "/cv/"
+  weight = 50
+
+[[menu.main]]
+  identifier = "guide"
+  name = "Guide"
+  url = "/guide/"
+  weight = 50
 
 
 [params]
