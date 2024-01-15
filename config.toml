@@ -3,16 +3,58 @@ languageCode = 'en-us'
 title = 'Hugo AcademicPages'
 theme = "hugo-academicpages"
 
-[module]
-  [module.hugoVersion]
-    extended = true
+[[menu.main]]
+    identifier = "publications"
+    name = "Publications"
+    url = "/publications/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "talks"
+    name = "Talks"
+    url = "/talks/"
+    weight = 20
+
+[[menu.main]]
+    identifier = "teaching"
+    name = "Teaching"
+    url = "/teaching/"
+    weight = 30
+
+[[menu.main]]
+    identifier = "portfolio"
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = 40
+
+[[menu.main]]
+    identifier = "blog"
+    name = "Blog Posts"
+    url = "/blog/"
+    weight = 50
+
+  [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    url = "/cv/"
+    weight = 50
+
 
 [params]
     follow_label = "Follow"
     powered_by = "Powered by"
 
     [params.author]
-
+      name = "Your Sidebar Name"
+      avatar = "profile.png"
+      bio = "Your biography for the left-hand sidebar"
+      location = "Location"
+      employer = ""
+      pubmed   = "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+      googlescholar = "http://yourfullgooglescholarurl.com"
+      email = ""
+      researchgate = "https://www.researchgate.net/profile/yourprofile"
+      uri = ""
         [params.author.contact]
             [[params.author.contact.list]]
             class = "linkedin"
@@ -29,7 +71,7 @@ theme = "hugo-academicpages"
             [[params.author.contact.list]]
             class = "github"
             icon = "fa-github"
-            url = "//github.com/sinjoysaha"
+            url = "//github.com/sinjoysaha/hugo-academicpages"
             title = "GitHub"
 
         
