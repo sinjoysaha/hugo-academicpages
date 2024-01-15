@@ -1,6 +1,6 @@
 baseURL = ''
 languageCode = 'en-us'
-title = 'Hugo AcademicPages'
+title = 'Your Name'
 theme = "hugo-academicpages"
 
 [[menu.main]]
@@ -47,38 +47,50 @@ theme = "hugo-academicpages"
 
 
 [params]
-    follow_label = "Follow"
-    powered_by = "Powered by"
+  follow_label = "Follow"
+  powered_by = "Powered by"
 
-    [params.author]
-      name = "Your Sidebar Name"
-      avatar = "profile.png"
-      bio = "Your biography for the left-hand sidebar"
-      location = "Location"
-      employer = ""
-      pubmed   = "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-      googlescholar = "http://yourfullgooglescholarurl.com"
-      email = ""
-      researchgate = "https://www.researchgate.net/profile/yourprofile"
-      uri = ""
-        [params.author.contact]
-            [[params.author.contact.list]]
-            class = "linkedin"
-            icon = "fa-linkedin"
-            url = "//linkedin.com/in/sinjoysaha"
-            title = "LinkedIn"
+  [params.author]
+    name = "Your Sidebar Name"
+    avatar = "https://academicpages.github.io/images/profile.png"
+    bio = "Your biography for the left-hand sidebar"
+    [params.author.details]
+      [[params.author.details.list]]
+      class = "location"
+      icon = "fa-map-marker"
+      title = "Location"
 
-            [[params.author.contact.list]]
-            class = "twitter"
-            icon = "fa-twitter-square"
-            url = "//twitter.com/sinjoysaha"
-            title = "Twitter"
+    [params.author.contact]
+      [[params.author.contact.list]]
+      class = "email"
+      icon = "fa-envelope"
+      url = "mailto:youremail@yourcompany.com"
+      title = "Email"
 
-            [[params.author.contact.list]]
-            class = "github"
-            icon = "fa-github"
-            url = "//github.com/sinjoysaha/hugo-academicpages"
-            title = "GitHub"
+    [params.author.social]
+      [[params.author.social.list]]
+      class = "googelscholar"
+      icon = "fas fa-graduation-cap"
+      url = "#"
+      title = "Google Scholar"
 
-        
-        
+      [[params.author.social.list]]
+      class = "linkedin"
+      icon = "fab fa-linkedin"
+      url = "//linkedin.com/in/sinjoysaha"
+      title = "LinkedIn"
+
+      [[params.author.social.list]]
+      class = "twitter"
+      icon = "fab fa-twitter-square"
+      url = "//twitter.com/sinjoysaha"
+      title = "Twitter"
+
+      [[params.author.social.list]]
+      class = "github"
+      icon = "fab fa-github"
+      url = "//github.com/sinjoysaha/hugo-academicpages"
+      title = "GitHub"
+
+    
+      
