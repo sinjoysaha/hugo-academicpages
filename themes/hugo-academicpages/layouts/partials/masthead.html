@@ -4,7 +4,7 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="/">{{ .Title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="/">{{ site.Title }}</a></li>
           {{- range site.Menus.main }}
             <li class="masthead__menu-item">
               <a href="{{ .URL }}" title="{{ .Name }} | {{ site.Title }}">{{ .Name }}</a>

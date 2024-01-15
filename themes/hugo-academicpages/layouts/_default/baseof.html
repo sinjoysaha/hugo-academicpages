@@ -5,9 +5,12 @@
         {{- partial "header.html" . -}}
         {{- partial "masthead.html" . -}}
 
-        <div id="content">
         {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
+        <div class="page__footer">
+            <footer>
+                {{- partial "footer.html" . -}}
+            </footer>
+          </div>
+        
     </body>
 </html>
