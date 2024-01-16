@@ -1,0 +1,29 @@
+{{- define "main" }}
+    <div id="main" role="main">
+        {{ partial "sidebar.html" . }}
+        {{ with site.GetPage "/404" }}
+        <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+            <header>
+                {{ if .Params.title }}<h1 class="page__title" itemprop="headline">{{ .Params.title | markdownify }}</h1>{{ end }}
+              
+                {{ if .Params.modified }}
+                <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.Params.date_label | default "Published:" }}</strong> <time datetime="{{ .Params.modified "%Y-%m-%d" }}">{{ .Params.modified "%B %d, %Y" }}</time></p>
+                {{ end }}
+        
+            <div class="page__inner-wrap">
+                <section class="page__content" itemprop="text">
+                    
+                        {{ .Content }}
+                    {{ if .Params.link }}<div><a href="{{ .Params.link }}" class="btn">{{ site.Params.ext_link_label | default "Direct Link" }}</a></div>{{ end }}
+                </section>
+          
+                <footer class="page__meta">
+                  {{ if site.Params.meta_label }}
+                    <h4 class="page__meta-title">{{ site.Params.meta_label }}</h4>
+                  {{ end }}
+                </footer>
+              </div>
+        </article>
+        {{ end }}
+    </div>
+{{- end }}
