@@ -12,8 +12,7 @@
         
             <div class="page__inner-wrap">
                 <section class="page__content" itemprop="text">
-                    
-                        {{ .Content }}
+                    {{ .Content }}
                     {{ if .Params.link }}<div><a href="{{ .Params.link }}" class="btn">{{ site.Params.ext_link_label | default "Direct Link" }}</a></div>{{ end }}
                 </section>
           
