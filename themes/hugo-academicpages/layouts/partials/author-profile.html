@@ -24,14 +24,14 @@
       {{- end }}
       {{- range site.Params.author.contact.list }}
         <li>
-            <a href="{{ .url }}">
+            <a href="{{ .url }}" target="_blank">
               <i class="fa fa-fw {{ .icon }}" aria-hidden="true"></i> {{ .title }}
             </a>
         </li>
       {{- end }}
       {{- range site.Params.author.social.list }}
         <li>
-            <a href="{{ .url }}">
+            <a href="{{ .url }}" target="_blank">
               <i class="fa-fw {{ .icon }}" aria-hidden="true"></i> {{ .title }}
             </a>
         </li>
